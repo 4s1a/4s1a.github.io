@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👊</text></svg>">
+
+    <!-- Primary Meta Tags -->
+    <title>KUMAHA SIA WEH!</title>
+    <meta name="title" content="Masia weh lah....">
+    <meta name="description" content="Ari atuda rek kumaha deui, teu bisa di kukumaha. Masia weh lah....">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kumah.asia/">
+    <meta property="og:title" content="KUMAHA SIA! 👊">
+    <meta property="og:description" content="Ari atuda rek kumaha deui, teu bisa di kukumaha. Masia weh lah....">
+    <meta property="og:image" content="https://kumah.asia/thumb.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kumah.asia/">
+    <meta property="twitter:title" content="KUMAHA SIA! 👊">
+    <meta property="twitter:description" content="Ari atuda rek kumaha deui, teu bisa di kukumaha. Masia weh lah....">
+    <meta property="twitter:image" content="https://kumah.asia/thumb.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">Sunda Edition</div>
+            <h1>KUMAHA SIA!<span>👊</span></h1>
+            <p class="subtitle">Koleksi Slankword Sunda nu matak ngajak gelut tapi lucu.</p>
+        </header>
+
+        <main>
+            <div class="card-container" id="slang-cards">
+                <!-- Cards will be injected by JS or hardcoded -->
+                <div class="card">
+                    <div class="emoji">😠</div>
+                    <div class="phrase">"Naon deuleu?!"</div>
+                    <div class="meaning">Nanya naon tapi bari ambek (ngajak gelut).</div>
+                </div>
+                <div class="card">
+                    <div class="emoji">🥊</div>
+                    <div class="phrase">"Kumaha aing we!"</div>
+                    <div class="meaning">Terserah saya, ulah loba omong.</div>
+                </div>
+                <div class="card">
+                    <div class="emoji">🔥</div>
+                    <div class="phrase">"Hareudang, lur!"</div>
+                    <div class="meaning">Panas pisan, boh cuaca boh hate.</div>
+                </div>
+            </div>
+
+            <div class="action-area">
+                <button id="share-btn" class="glow-on-hover">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width="20">
+                    Share ka WhatsApp
+                </button>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 kumah.asia Portal</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('share-btn').addEventListener('click', () => {
+            const text = encodeURIComponent("KUMAHA SIA! 👊\n\nAri atuda rek kumaha deui, teu bisa di kukumaha. Masia weh lah....\nhttps://kumah.asia/");
+            window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
+        });
+    </script>
+</body>
+
+</html>
